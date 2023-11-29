@@ -1,0 +1,17 @@
+* {
+    background-color: #fbeaff;
+}
+
+.container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 0 auto;
+
+}
+
+.square {
+    height: 400px;
+    width: 200px;
+    background-color: #8553d7;
+}
