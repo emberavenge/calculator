@@ -15,7 +15,12 @@ function divide(num1, num2) {
 }
 
 let firstNumber = 3;
-let operators = ['+', '-', '*', '/'];
+let operators = {
+    '+': add(num1, num2),
+    '-': subtract(num1, num2),
+    '*': divide(num1, num2),
+    '/': divide(num1, num2)
+};
 let secondNumber = 5;
 
 function operate(operator, firstNum, secNum) {
