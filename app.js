@@ -1,10 +1,7 @@
 const squares = document.querySelectorAll('.square');
-
-squares.forEach((square) => {
-    square.addEventListener('click', () => {
-        alert("Hello world!")
-    })
-})
+let firstNumber = 3;
+let operators = ['+','-','*','/'];
+let secondNumber = 5;
 
 
 function add(num1, num2) {
@@ -23,11 +20,7 @@ function divide(num1, num2) {
     return num1 / num2;
 }
 
-let firstNumber = 3;
-let operators = ['+','-','*','/'];
-let secondNumber = 5;
-
-function operate(operator, firstNum, secNum) {
+function operate(operator, firstNumber, secondNumber) {
     if (operator == '+') {
         return add(firstNum, secNum);
     } else if (operator == '-') {
@@ -35,6 +28,12 @@ function operate(operator, firstNum, secNum) {
     } else if (operator == '*') {
         return multiply(firstNum, secNum)
     } else if (operator == '/') {
-        return divide(firstNum, secNum)
+             return divide(firstNum, secNum)
     }
 }
+
+squares.forEach((square) => {
+    square.addEventListener('click', () => {
+        alert("Hello world!");
+    })
+})
