@@ -1,4 +1,4 @@
-const squares = document.querySelectorAll('.square');
+const buttons = document.querySelectorAll('button');
 let firstNumber = 3;
 let operators = ['+','-','*','/'];
 let secondNumber = 5;
@@ -32,8 +32,8 @@ function operate(operator, firstNumber, secondNumber) {
     }
 }
 
-squares.forEach((square) => {
-    square.addEventListener('click', () => {
+buttons.forEach((button) => {
+    button.addEventListener('click', () => {
         alert("Hello world!");
     })
 })
