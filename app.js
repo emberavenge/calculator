@@ -4,6 +4,10 @@ let operators = ['+','-','*','/'];
 let secondNumber = 5;
 
 
+function displayUpdate(button) {
+    let displayText = document.getElementById("display").textContent = button.value;
+}
+
 function add(num1, num2) {
     return num1 + num2;
 }
@@ -34,6 +38,6 @@ function operate(operator, firstNumber, secondNumber) {
 
 buttons.forEach((button) => {
     button.addEventListener('click', () => {
-        alert("Hello world!");
+       displayUpdate(button);
     })
 })
