@@ -2,10 +2,11 @@ const buttons = document.querySelectorAll('button');
 let firstNumber = 3;
 let operators = ['+','-','*','/'];
 let secondNumber = 5;
-
+let numArrays = [];
 
 function displayUpdate(button) {
-    let displayText = document.getElementById("display").textContent = button.value;
+    let displayText = document.getElementById("display");
+    return displayText.textContent = button.value;
 
 }
 
@@ -39,6 +40,7 @@ function operate(operator, firstNumber, secondNumber) {
 
 buttons.forEach((button) => {
     button.addEventListener('click', () => {
-       displayUpdate(button);
+     displayUpdate(button);
+      numArrays.push(displayUpdate(button))
     })
 })
