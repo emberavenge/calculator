@@ -6,33 +6,34 @@ let secondNumber = 5;
 
 function displayUpdate(button) {
     let displayText = document.getElementById("display").textContent = button.value;
+
 }
 
-function add(num1, num2) {
-    return num1 + num2;
+function add(firstNumber, secondNumber) {
+    return firstNumber + secondNumber;
 }
 
-function subtract(num1, num2) {
-    return num1 - num2;
+function subtract(firstNumber, secondNumber) {
+    return firstNumber - secondNumber;
 }
 
-function multiply(num1, num2) {
-    return num1 * num2;
+function multiply(firstNumber, secondNumber) {
+    return firstNumber * secondNumber;
 }
 
-function divide(num1, num2) {
-    return num1 / num2;
+function divide(firstNumber, secondNumber) {
+    return firstNumber / secondNumber;
 }
 
 function operate(operator, firstNumber, secondNumber) {
     if (operator == '+') {
-        return add(firstNum, secNum);
+        return add(firstNumber, secondNumber);
     } else if (operator == '-') {
-        return subtract(firstNum, secNum)
+        return subtract(firstNumber, secondNumber)
     } else if (operator == '*') {
-        return multiply(firstNum, secNum)
+        return multiply(firstNumber, secondNumber)
     } else if (operator == '/') {
-             return divide(firstNum, secNum)
+             return divide(firstNumber, secondNumber)
     }
 }
 
